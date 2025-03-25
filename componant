@@ -1,0 +1,10 @@
+    <!-- <% for( let index = 0; index < data.length; index++ ) { %>
+        <div class="card">
+            <h2><%= data[index].product %></h2>
+            <h3><%= data[index].prand %></h3>
+            <h4><%= data[index].price %></h4>
+            <% for(const spec of Object.keys(data[index].specs)) { %>
+            <h6><%= spec %> : <%= data[index].specs[spec] %></h6>
+            <% } %>
+        </div>
+    <% } %> -->

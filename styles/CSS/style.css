@@ -1,0 +1,289 @@
+* {
+    font-family: tahoma;
+    font-weight: 600;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    width: 100%;
+    height: max-content;
+    display:flex;
+    overflow: hidden;
+    background-color: whitesmoke;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: scroll;
+    gap: 40px;
+}
+.navBar {
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 50px;
+    display: flex;
+    position: fixed;
+    z-index: 99;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px;
+    top: 0;
+    box-shadow: 0 0 2px 1px black;
+}
+
+.navsearch input {
+    border: none;
+    direction: rtl;
+    font-size: 10px;
+    width: 520px;
+    height: 27px;
+    background-color: whitesmoke;
+    padding-right: 9px;
+    position: relative;
+    z-index: 2;
+}
+
+.btn {
+    position: fixed;
+    bottom: 5px;
+    left: 50%;
+    background: black;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.iphoto {
+    position: relative;
+    width: 100%;
+    background: white;
+    margin-top: 50px;
+}
+.iphoto img {
+    width: 100%;
+}
+.explore {
+    width: 100%;
+    height: 200px;
+    padding: 0 25px;
+}
+.explore h3 {
+    margin-bottom: 10px;
+    margin-left: 5%;
+}
+.explore .counter {
+    width: 90%;
+    height: 50%;
+    margin: auto;   
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.explore .counter .cata {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    box-shadow: 1.5px 1.5px #323232;
+    border: 2px solid #323232;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.explore .counter .cata img {
+    width: 50px;
+}
+.explore .counter .cata h6 {
+    font-weight: 800;
+}
+.ads {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+.ads h3 {
+    margin-left: 12%;
+    margin-bottom: 10px;
+}
+.ads-counter {
+    width: 78%;
+    height: 100%;
+    display: grid;
+    margin: auto;
+    grid-template-columns: 25% 25% 25% 25%;
+    justify-items: center;
+}
+.ads-counter .ad {
+    width: 225px;
+    height: 225px;
+    box-shadow: 2px 2px #323232;
+    border: 2px solid #323232;
+    background: white;
+}
+.ads-counter .ad img {
+    width: 100%;
+}
+.products {
+    width: 82%;
+    height: max-content;
+    display: grid;
+    grid-template-columns: repeat(4,25%);
+    gap: 5px;
+    row-gap: 10px;
+}
+.card {
+    color: #323232;
+    background-color: #fff;
+    width: 230px;
+    height: 300px;
+    border: 2px solid #323232;
+    box-shadow: 1.5px 1.5px #323232;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 20px;
+    gap: 10px;
+    font-family: tahoma;
+}
+.card:last-child {
+    justify-content: flex-end;
+}
+.card-img {
+    transition: all 0.5s;
+    display: flex;
+    justify-content: center;
+}
+.card-img .img {
+    width: 100px;
+    height: 100px;
+}
+.card-title {
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    color: #323232;
+}
+.card-subtitle {
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    color: #323232;
+}
+.card-divider {
+    width: 100%;
+    border: 1px solid #323232;
+    border-radius: 50px;
+}
+.card-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.card-price {
+    font-size: 20px;
+    font-weight: 500;
+    color: #323232;
+}
+.card-price span {
+    font-size: 20px;
+    font-weight: 500;
+    color: #323232;
+}
+.card-btn {
+    height: 35px;
+    background-color: #fff;
+    border: 2px solid #323232;
+    border-radius: 5px;
+    padding: 0 15px;
+    transition: all 0.3s;
+}
+.footer {
+    width: 100%;
+    height: 250px;
+    padding: 30px 20px;
+    display: grid;
+    grid-template-columns: repeat(4,25%);
+    justify-items: center;
+    gap: 5px;
+    background-color: black;
+    color: #fff;
+}
+.foot {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.slider {
+    position: absolute;
+    top: 50px;
+    background-color: whitesmoke;
+    width: 100%;
+    height: 0;
+}
+@media(min-width:410px) {
+    body {
+        box-sizing: border-box;
+        width: 100%;
+    }
+    .navBar {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 9% 61% 30%;
+        justify-items: flex-end;
+    }
+    .navsearch {
+        width: 100%;
+    }
+    .navsearch input {
+        width: 100%;
+    }
+    .explore {
+        overflow-x: scroll;
+        padding: 0 0px;
+    }
+    .explore .counter {
+        margin: 5px
+    }
+    .explore .counter .cata {
+        padding: 0 20px;
+    }
+    .ads-counter {
+        display: grid;
+        grid-template-columns: 47% 47%;
+        column-gap: 3%;
+        row-gap: 20px;
+    }
+    .ads-counter .ad {
+       width: 100%;
+       height: min-content;
+       margin: 0;
+    }
+    .ads {
+        margin-bottom: 325px;
+    }
+    .products {
+        display: grid;
+        grid-template-columns: 47% 47%;
+        gap: 3%;
+        margin-bottom: 90px;
+    }
+    .card {
+        width: 100%;
+        height: 250px;
+    }
+    .card-img .img {
+        width: 70px;
+        height: 70px;
+    }
+    .card-title {
+        font-size: 16px;
+    }
+}
